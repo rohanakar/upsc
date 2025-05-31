@@ -82,3 +82,48 @@ p {
   font-size: 1.2em;
   color: #ccc;
 }
+
+
+/* Media Queries for screens smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    width: 95%; /* Adjust width for mobile devices */
+    padding: 10px; /* Add padding to prevent content from touching the edges */
+  }
+
+  .App {
+    padding: 15px; /* Adjust padding for mobile */
+  }
+
+  h1 {
+    font-size: 1.5em;  /* Reduce font size for h1 on small screens */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 1.2em;  /* Reduce font size for h2 on small screens */
+  }
+
+  input, button {
+    font-size: 1em;  /* Reduce font size for input and button */
+    padding: 10px;    /* Adjust padding to make it more compact */
+  }
+
+  button {
+    font-size: 1.1em;  /* Adjust button font size */
+  }
+
+  li {
+    font-size: 1em;  /* Adjust font size for list items */
+    padding: 12px;   /* Adjust padding */
+  }
+
+  p {
+    font-size: 1em;  /* Adjust paragraph font size */
+    padding: 10px;   /* Adjust padding */
+  }
+
+  .loader {
+    font-size: 1em;  /* Adjust loader font size */
+  }
+}

@@ -1,70 +1,120 @@
+/* General styling for the answer section */
 .answer-section {
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-    padding: 20px;
-    width: 100%;
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 20px;
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    overflow-wrap: break-word;
-  }
-  
-  .answer-section h1,
-  .answer-section h2,
-  .answer-section h3,
-  .answer-section h4,
-  .answer-section h5,
-  .answer-section h6 {
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .answer-section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #fff;
-  }
-  
-  .answer-section ul,
-  .answer-section ol {
-    padding-left: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .answer-section li {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .answer-section blockquote {
-    background-color: #f0f0f0;
-    border-left: 5px solid #ccc;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    font-style: italic;
-  }
-  
-  .answer-section code {
-    background-color: #f4f4f4;
-    padding: 3px 8px;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .answer-section pre code {
-    background-color: #2d2d2d;
-    padding: 15px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1em;
-    display: block;
-    overflow-x: auto;
-    white-space: pre-wrap;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 20px;
+  width: 95%;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 8px; /* Adjusted to 8px for consistency */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow-wrap: break-word;
+  max-width: 900px; /* Ensure the content is not stretched too wide on large screens */
+  margin: 20px auto; /* Center the content */
+}
+
+/* Styling for all headings in the answer section */
+.answer-section h1,
+.answer-section h2,
+.answer-section h3,
+.answer-section h4,
+.answer-section h5,
+.answer-section h6 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Font size adjustments for headings */
+.answer-section h1 {
+  font-size: 2em; /* Adjusted for better visibility */
+}
+
+.answer-section h2 {
+  font-size: 1.8em;
+}
+
+.answer-section h3 {
+  font-size: 1.6em;
+}
+
+.answer-section h4 {
+  font-size: 1.4em;
+}
+
+.answer-section h5 {
+  font-size: 1.2em;
+}
+
+.answer-section h6 {
+  font-size: 1.1em;
+}
+
+/* Styling for paragraphs */
+.answer-section p {
+  font-size: 1.1em;  /* Slightly smaller font size */
+  line-height: 1.8;  /* Increase line height for readability */
+  margin-bottom: 20px;
+  color: #fff;
+  max-width: 800px;  /* Limit line width to improve readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for unordered and ordered lists */
+.answer-section ul,
+.answer-section ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Styling for list items */
+.answer-section li {
+  font-size: 1.1em;  /* Slightly smaller font for list items */
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* Styling for blockquotes */
+.answer-section blockquote {
+  background-color: #f0f0f0;
+  border-left: 5px solid #ccc;
+  padding: 15px 25px;  /* Adjusted padding for better spacing */
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 800px;  /* Restrict width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for inline code elements */
+.answer-section code {
+  background-color: #f4f4f4;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #d6336c;  /* Optional: You can change the color */
+}
+
+/* Styling for preformatted code blocks */
+.answer-section pre code {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1em;  /* Slightly larger font size for better readability */
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  max-width: 800px;  /* Restrict the width */
+  margin-left: auto;
+  margin-right: auto;
+}
