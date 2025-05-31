@@ -1,0 +1,30 @@
+import React, { useState } from 'react';
+
+const SearchBar = ({ query, setQuery, onSearch }) => {
+
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(query);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} style={{position: "relative",justifyContent: "center", alignItems: "center",textAlign: "center"}}>
+      <input 
+        style={{height: "50px", width: "100%", borderRadius: "10px", border: "none", padding: "10px", marginBottom: "10px", justifyContent: "center", alignItems: "center",textAlign: "center"}}
+        type="text" 
+        value={query} 
+        onChange={handleChange} 
+        placeholder="Enter your query..." 
+
+        required 
+      />
+      <button style={{position: "absolute", right: "0", top: "10px", width: "200px", height: "50px", borderRadius: "10px", border: "none", padding: "10px", justifyContent: "center", alignItems: "center",textAlign: "center"}} type="submit">Search</button>
+    </form>
+  );
+};
+
+export default SearchBar;
