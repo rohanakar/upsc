@@ -18,6 +18,8 @@ const SearchBar = ({ query, setQuery, onSearch }) => {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
+        width: "95%",
+        margin: "0 auto",
       }}
     >
       <input
